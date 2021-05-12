@@ -1,8 +1,8 @@
 # SQL
 QA Practice
 
-* DDL
+* DDL - Data Definition Language
 
-* DML
+* DML - Data Manipulation Language
 
-* ERD
+* ERD - Entity-Relationship Diagram
