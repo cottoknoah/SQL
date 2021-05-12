@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS game_store;
 
-CREATE TABLE customers (
+CREATE TABLE IF NOT EXISTS customers (
     customer_id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
@@ -8,14 +8,14 @@ CREATE TABLE customers (
     postcode VARCHAR(55) NOT NULL
 );
 
-CREATE TABLE products (
+CREATE TABLE IF NOT EXISTS products (
 	product_id INT PRIMARY KEY AUTO_INCREMENT,
 	title VARCHAR(255) NOT NULL,
 	price DECIMAL(6,2) NOT NULL,
 	stock INT NOT NULL
 );
 
-CREATE TABLE orders (
+CREATE TABLE IF NOT EXISTS orders (
 	order_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	customer_id INT NOT NULL,
 	product_id INT NOT NULL,
