@@ -1,5 +1,8 @@
-# SQL
-QA Practice
+# QA Practice
+
+Reviewing SQL, MySQL, MySQL Workbench, navigating CLI, Git 
+
+# Database Introduction
 
 * DDL - Data Definition Language
 
