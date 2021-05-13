@@ -1,11 +1,11 @@
---Note: next time add '_db' at the end for database
+-- Note: next time add '_db' at the end for database
 USE gamer_store;
 
 # SHOW GRANTS for 'root'@'localhost';
 # DROP DATABASE IF EXISTS gamer_store;
 # TRUNCATE <table_name>;
 
---Customers Table
+-- Customers Table
 
 INSERT INTO customers (name, email, house_number, postcode)
 VALUES ('Knoah', 'knoah@email.com', 22, 78234);
@@ -18,7 +18,7 @@ VALUES ('Shirley', 'shirley@email.com', 28, 61932);
 INSERT INTO customers (name, email, house_number, postcode)
 VALUES ('Brittany', 'brittany@email.com', 12, 98310);
 
---Products Table
+-- Products Table
 
 INSERT INTO products(title, price, stock)
 VALUES('BioShock Infinite', 59.99, 12);
@@ -32,7 +32,7 @@ INSERT INTO products(title, price, stock)
 VALUES('Tetris', 3000.00, 1);
 
 
---Orders Table
+-- Orders Table
 
 INSERT INTO orders(customer_id, product_id, date_placed, quantity)
 VALUES(1, 1, '2021-05-12', 1);
@@ -49,7 +49,7 @@ VALUES(4, 3, '2021-05-14', 2);
 INSERT INTO orders(customer_id, product_id, date_placed, quantity)
 VALUES(5, 4, '2021-05-15', 1);
 
----Note: there's an incorrect record. To change/update a record in the database use queries below---
+-- Note: there's an incorrect record. To change/update a record in the database use queries below---
 SELECT * 
 FROM products 
 WHERE product_id = 4;
