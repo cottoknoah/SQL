@@ -1,8 +1,9 @@
-USE gamer_store_db;
+--Note: next time add '_db' at the end for database
+USE gamer_store;
 
 # SHOW GRANTS for 'root'@'localhost';
-# DROP DATABASE IF EXISTS gamer_store_db;
-# TRUNCATE table_name;
+# DROP DATABASE IF EXISTS gamer_store;
+# TRUNCATE <table_name>;
 
 --Customers Table
 
